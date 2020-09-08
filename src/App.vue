@@ -1,6 +1,6 @@
 <template>
 	<div id="app">
-		<Header/>
+		<Header />
 		<AddTodo v-on:add-todo="addTodo" />
 		<Todos v-bind:todos="todos" v-on:del-todo="deleteTodo" />
 	</div>
@@ -20,16 +20,32 @@ export default {
 	},
 	data() {
 		return {
-			todos: [],
+			todos: [
+				{
+					id: 0,
+					title: "Do this thing",
+					completed: false,
+				},
+				{
+					id: 1,
+					title: "Then do this thing",
+					completed: false,
+				},
+				{
+					id: 2,
+					title: "Finally, do this thing",
+					completed: false,
+				},
+			],
 		};
 	},
 	methods: {
 		deleteTodo(id) {
-			this.todos = this.todos.filter(todo => todo.id !== id);
+			this.todos = this.todos.filter((todo) => todo.id !== id);
 		},
 		addTodo(newTodo) {
 			this.todos = [...this.todos, newTodo];
-		}
+		},
 	},
 };
 </script>
@@ -40,12 +56,10 @@ export default {
 	margin: 0;
 	padding: 0;
 }
-
 body {
 	font-family: Arial, Helvetica, sans-serif;
 	line-height: 1.4;
 }
-
 .btn {
 	display: inline-block;
 	border: none;
@@ -54,9 +68,7 @@ body {
 	padding: 7px 20px;
 	cursor: pointer;
 }
-
 .btn:hover {
 	background: #666;
 }
-
 </style>

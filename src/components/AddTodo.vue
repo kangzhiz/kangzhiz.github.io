@@ -34,14 +34,15 @@ export default {
 <style scoped>
 form {
 	display: flex;
+	height: 70px;
 }
-
 input[type="text"] {
 	flex: 10;
 	padding: 5px;
+	font-size: 24px;
 }
-
 input[type="submit"] {
 	flex: 2;
+	font-size: 24px;
 }
 </style>
