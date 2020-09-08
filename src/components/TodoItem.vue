@@ -24,19 +24,30 @@ export default {
 .todo-item {
 	background: #f4f4f4;
 	padding: 10px;
-	border-bottom: 1px #ccc dotted;
+	border-bottom: 1px #cccccc dotted;
 	font-size: 17px;
 }
 .is-complete {
 	text-decoration: line-through;
 }
 .del {
-	background: #ff0000;
-	color: #fff;
+	background: #555555;
+	color: #ffffff;
 	border: none;
 	padding: 5px 9px;
 	border-radius: 50%;
 	cursor: pointer;
 	float: right;
+}
+input[type="checkbox"] {
+	-webkit-appearance: none;
+	width: 15px;
+	height: 15px;
+	background: #ffffff;
+	border-radius: 100%;
+	border: 2px solid #555555;
+}
+input[type="checkbox"]:checked {
+	background: #6b6b6b;
 }
 </style>

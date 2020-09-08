@@ -23,17 +23,27 @@ export default {
 			todos: [
 				{
 					id: 0,
-					title: "Do this thing",
+					title: "Charlie",
 					completed: false,
 				},
 				{
 					id: 1,
-					title: "Then do this thing",
+					title: "Moose",
 					completed: false,
 				},
 				{
 					id: 2,
-					title: "Finally, do this thing",
+					title: "Harriet",
+					completed: false,
+				},
+				{
+					id: 3,
+					title: "Tiara",
+					completed: false,
+				},
+				{
+					id: 4,
+					title: "Maria",
 					completed: false,
 				},
 			],
@@ -63,12 +73,12 @@ body {
 .btn {
 	display: inline-block;
 	border: none;
-	background: #555;
-	color: #fff;
+	background: #69a0dc;
+	color: #ffffff;
 	padding: 7px 20px;
 	cursor: pointer;
 }
 .btn:hover {
-	background: #666;
+	background: #58738f;
 }
 </style>
