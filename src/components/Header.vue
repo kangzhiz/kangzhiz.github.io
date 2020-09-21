@@ -1,6 +1,6 @@
 <template>
 	<header class="header">
-		<h1>cats, and then also a person</h1>
+		<h1>hello</h1>
 	</header>
 </template>
 
@@ -12,14 +12,9 @@ export default {
 
 <style scoped>
 .header {
-	background: #333333;
-	color: #ffffff;
+	color: #2d1c8f;
 	text-align: center;
 	padding: 10px;
 	font-size: 20px;
-}
-.header a {
-	color: #ffffff;
-	padding-right: 5px;
 }
 </style>
