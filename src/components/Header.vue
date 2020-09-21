@@ -1,6 +1,8 @@
 <template>
 	<header class="header">
-		<h1>hello</h1>
+		<h2>hi, my name is</h2>
+		<h1>john zhao</h1>
+		<a href="https://gitlab.com/kangzhiz">gitlab</a>
 	</header>
 </template>
 
@@ -11,10 +13,25 @@ export default {
 </script>
 
 <style scoped>
-.header {
-	color: #2d1c8f;
+header {
 	text-align: center;
-	padding: 10px;
+	padding: 50px;
+	font-family: 'Courier New', Courier, monospace;
+}
+a {
+	color: var(--kary-orange);
+	font-size: 15px;
+}
+a:visited {
+	color: var(--kary-orange);
+	text-decoration: none;
+}
+h1 {
+	color: var(--kary-green);
+	font-size: 50px;
+}
+h2 {
+	color: var(--kary-blue);
 	font-size: 20px;
 }
 </style>
