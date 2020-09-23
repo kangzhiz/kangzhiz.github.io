@@ -2,7 +2,7 @@
 	<header class="header">
 		<h2>hi, my name is</h2>
 		<h1>john zhao</h1>
-		<a href="https://github.com/kangzhiz">gitlab</a>
+		<a href="https://github.com/kangzhiz">github</a>
 	</header>
 </template>
 

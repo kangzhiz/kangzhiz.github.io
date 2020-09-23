@@ -1,4 +1,6 @@
 module.exports = {
-	publicPath: 'https://kangzhiz.github.io/',
+	publicPath: process.env.NODE_ENV === 'production'
+		? 'https://kangzhiz.gitlab.io/'
+		: '/',
 	outputDir: 'docs'
 };
