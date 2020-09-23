@@ -1,4 +1,4 @@
-# kangzhiz.gitlab.io
+# kangzhiz.github.io
 
 ## Project setup
 ```
