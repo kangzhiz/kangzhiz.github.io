@@ -8,9 +8,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Mansalva&display=swap');
 
 :root {
-    --bg: #f9f5d7;
-    --fg: #282828;
-    --grey: #7c6f64;
+    --bg: #1b1b1b;
+    --fg: #ebdbb2;
+    --grey: #928374;
     --red: #cc241d;
     --green: #98971a;
     --yellow: #d79921;
@@ -27,40 +27,44 @@ body {
 #header, #links, #placeholder {
     text-align: center;
     margin: auto;
-    padding: 15px;
+    padding: 1em;
 }
 #header h1 {
-    font-family: 'Covered By Your Grace', cursive;
-    font-size: 9em;
+    font-family: 'Seaweed Script', cursive;
+    font-size: 10em;
+    color: var(--red);
 }
 #header h2 {
     font-size: 2.5em;
+    color: var(--blue);
 }
 #header h3 {
     font-size: 1.5em;
+    color: var(--yellow);
 }
 #header h2 span {
-    color: var(--blue);
+    color: var(--yellow);
+    font-size: 1.3em;
 }
 #header h3 span {
-    color: var(--red);
+    color: var(--blue);
+    font-size: 1.3em;
 }
 #links span {
-    padding: 15px;
+    padding: 1em;
 }
 #links a {
     display: table-cell;
-    width: 120px;
-    height: 30px;
+    padding-left: 1em;
+    padding-right: 1em;
+    height: 2em;
+    font-size: 1.1em;
     vertical-align: middle;
     color: var(--bg);
-    background: var(--fg);
+    background: var(--purple);
     text-decoration: none;
     transition: transform .2s;
 }
 #links a:hover {
-    transform: scale(1.15);
-}
-#placeholder {
-    padding: 50px;
+    transform: scale(1.1);
 }
