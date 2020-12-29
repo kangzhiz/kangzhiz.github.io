@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Seaweed+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Condiment&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mansalva&display=swap');
+
+:root {
+    --bg: #f9f5d7;
+    --fg: #282828;
+    --grey: #7c6f64;
+    --red: #cc241d;
+    --green: #98971a;
+    --yellow: #d79921;
+    --blue: #458588;
+    --purple: #b16286;
+    --aqua: #689d6a;
+    --orange: #d65d0e;
+}
+body {
+    font-family: 'Courier Prime', monospace;
+    background: var(--bg);
+    color: var(--fg);
+}
+#header, #links, #placeholder {
+    text-align: center;
+    margin: auto;
+}
+#header h1 {
+    font-family: 'Covered By Your Grace', cursive;
+    font-size: 9em;
+}
+#header h2 {
+    font-size: 2.5em;
+}
+#header h3 {
+    font-size: 1.5em;
+}
+#header h2 span {
+    color: var(--blue);
+}
+#header h3 span {
+    color: var(--red);
+}
+#links {
+    padding: 30px;
+}
+#links a, a:visited {
+    color: var(--green);
+}
+#placeholder {
+    padding: 50px;
+}
