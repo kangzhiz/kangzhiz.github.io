@@ -1,38 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+
 :root {
-    --main-bg-color: #1a1a1a;
-    --kary-red: #d38569;
-	--kary-orange: #d28468;
-	--kary-green: #789f6b;
-	--kary-blue: #819dc2;
-	--kary-purple: #b98eb2;
+    --background-color: #fbf5d7;
+    --foreground-color: #3c3836;
 }
 
 body {
-    background: var(--main-bg-color);
-}
-
-#header {
-    text-align: center;
+    font-family: 'Courier Prime', monospace;
+    color: var(--foreground-color);
+    background: var(--background-color);
     padding: 50px;
-    font-family: 'Fira Mono', monospace;
 }
 
-a {
-    color: var(--kary-orange);
-    font-size: 15px;
+#header, #links, #placeholder {
+    width: 70%;
+    text-align: center;
+    margin: auto;
 }
 
-a:visited {
-    color: var(--kary-orange);
-    text-decoration: none;
+#links {
+    padding: 30px;
 }
 
-h1 {
-    color: var(--kary-green);
-    font-size: 50px;
+#placeholder {
+    padding: 50px;
 }
 
-h2 {
-    color: var(--kary-blue);
-    font-size:20px;
+#header h1 {
+    font-size: 2.5em;
 }
+
+#header h2 {
+    font-size: 1.5em;
+}
+
+#header h1 span {
+    color: #458588;
+}
+
+#header h2 span {
+    color: #cc241d;
+}
+
+#links a, a:visited {
+    color: #98971a;
+}
+
