@@ -21,12 +21,13 @@
 }
 body {
     font-family: 'Courier Prime', monospace;
-    background: var(--bg);
     color: var(--fg);
+    background: var(--bg);
 }
 #header, #links, #placeholder {
     text-align: center;
     margin: auto;
+    padding: 15px;
 }
 #header h1 {
     font-family: 'Covered By Your Grace', cursive;
@@ -44,11 +45,21 @@ body {
 #header h3 span {
     color: var(--red);
 }
-#links {
-    padding: 30px;
+#links span {
+    padding: 15px;
 }
-#links a, a:visited {
-    color: var(--green);
+#links a {
+    display: table-cell;
+    width: 120px;
+    height: 30px;
+    vertical-align: middle;
+    color: var(--bg);
+    background: var(--fg);
+    text-decoration: none;
+    transition: transform .2s;
+}
+#links a:hover {
+    transform: scale(1.15);
 }
 #placeholder {
     padding: 50px;
