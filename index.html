@@ -4,12 +4,13 @@
 <head>
     <meta charset='utf-8'>
     <title>Welcome</title>
+    <link rel='shortcut icon' type='image/png' href='images/favicon-orange.png'>
+    <link rel='preconnect' href='https://fonts.gstatic.com'>
+    <link href='https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap' rel='stylesheet'>
     <script src='scripts/main.js' type='text/javascript'></script>
 </head>
 
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
-    
     :root {
         --background-color: #fbf5d7;
         --foreground-color: #3c3836;
@@ -21,15 +22,11 @@
         padding: 50px;
     }
     #header, #links, #placeholder {
-        width: 70%;
         text-align: center;
         margin: auto;
     }
-    #links {
-        padding: 30px;
-    }
-    #placeholder {
-        padding: 50px;
+    #header img {
+        width: 250px;
     }
     #header h1 {
         font-size: 2.5em;
@@ -43,18 +40,25 @@
     #header h2 span {
         color: #cc241d;
     }
+    #links {
+        padding: 30px;
+    }
     #links a, a:visited {
         color: #98971a;
+    }
+    #placeholder {
+        padding: 50px;
     }
 </style>
 
 <body>
     <div id='header'>
+        <img src="images/kang.png">
         <h1>hi, my name is <span>kangzhi zhao</span></h1>
         <h2>( you can call me <span>john</span> )</h2>
     </div>
     <div id='links'>
-        Links:
+        links:
         <a href='https://github.com/kangzhiz'>github</a>
         <a href='https://www.linkedin.com/in/kangzhiz'>linkedin</a>
     </div>
