@@ -1,5 +1,4 @@
-window.onload = function() {
-    document.getElementById("header").onclick = function() {
-        console.log("hello!");
-    }
+function toggleCmd() {
+    $('#logo input').toggle('medium');
+    $('#logo input').focus();
 }

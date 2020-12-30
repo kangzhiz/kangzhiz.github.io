@@ -1,3 +1,4 @@
+/* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Seaweed+Script&display=swap');
@@ -7,6 +8,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mansalva&display=swap');
 
+/* colors */
 :root {
     --bg: #1b1b1b;
     --fg: #ebdbb2;
@@ -19,52 +21,108 @@
     --aqua: #689d6a;
     --orange: #d65d0e;
 }
+
+/* default theme and font */
 body {
     font-family: 'Courier Prime', monospace;
     color: var(--fg);
     background: var(--bg);
 }
-#header, #links, #placeholder {
+
+/* horizontally center everything */
+#logo, #header, #links {
+    position: relative;
     text-align: center;
     margin: auto;
     padding: 1em;
 }
-#header h1 {
+
+/* logo button and command box */
+#logo button {
+    all: unset;
+    width: 1em;
     font-family: 'Seaweed Script', cursive;
     font-size: 10em;
     color: var(--red);
+    transition: transform .2s;
+    cursor: pointer;
 }
-#header h2 {
+#logo button:hover {
+    transform: scale(1.25);
+}
+#logo input {
+    display: none;
+    position: relative;
+    top: -1em;
+    width: 30%;
+    font-size: 1.4em;
+    font-family: 'Courier Prime', monospace;
+    color: var(--fg);
+    background: var(--bg);
+    border: none;
+}
+
+/* header text */
+#header h1 {
     font-size: 2.5em;
     color: var(--blue);
 }
-#header h3 {
+#header h2 {
     font-size: 1.5em;
     color: var(--yellow);
 }
-#header h2 span {
+#header h1 span {
     color: var(--yellow);
     font-size: 1.3em;
 }
-#header h3 span {
+#header h2 span {
     color: var(--blue);
     font-size: 1.3em;
 }
-#links span {
-    padding: 1em;
-}
+
+/* links icons */
 #links a {
-    display: table-cell;
+    text-decoration: none;
+}
+#links img {
+    width: 5em;
     padding-left: 1em;
     padding-right: 1em;
-    height: 2em;
-    font-size: 1.1em;
-    vertical-align: middle;
-    color: var(--bg);
-    background: var(--purple);
-    text-decoration: none;
     transition: transform .2s;
 }
-#links a:hover {
+#links img:hover {
+    transform: scale(1.1);
+}
+
+/* header text */
+#header h1 {
+    font-size: 2.5em;
+    color: var(--blue);
+}
+#header h2 {
+    font-size: 1.5em;
+    color: var(--yellow);
+}
+#header h1 span {
+    color: var(--yellow);
+    font-size: 1.3em;
+}
+#header h2 span {
+    color: var(--blue);
+    font-size: 1.3em;
+}
+
+/* links icons */
+#links a {
+    text-decoration: none;
+}
+#links img {
+    width: 5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    transition: transform .2s;
+    color: green;
+}
+#links img:hover {
     transform: scale(1.1);
 }
