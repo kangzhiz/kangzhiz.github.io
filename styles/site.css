@@ -4,112 +4,86 @@
 @import url('https://fonts.googleapis.com/css2?family=Seaweed+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Condiment&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mansalva&display=swap');
 
-/* colors */
+/* colors and fonts variables */
 :root {
-    --bg: #1b1b1b;
-    --fg: #ebdbb2;
-    --grey: #928374;
-    --red: #cc241d;
-    --green: #98971a;
-    --yellow: #d79921;
-    --blue: #458588;
-    --purple: #b16286;
-    --aqua: #689d6a;
-    --orange: #d65d0e;
+    --bg-color: #1b1b1b;
+    --fg-color: #ebdbb2;
+    --grey-color: #928374;
+    --red-color: #cc241d;
+    --green-color: #98971a;
+    --yellow-color: #d79921;
+    --blue-color: #458588;
+    --purple-color: #b16286;
+    --aqua-color: #689d6a;
+    --orange-color: #d65d0e;
+    --mono-font: 'Courier Prime', monospace;
+    --initials-font: 'Dancing Script', cursive;
+    --handwrite-font: 'Caveat', monospace;
 }
 
 /* default theme and font */
 body {
-    font-family: 'Courier Prime', monospace;
-    color: var(--fg);
-    background: var(--bg);
+    font-family: var(--mono-font);
+    color: var(--fg-color);
+    background: var(--bg-color);
 }
 
 /* horizontally center everything */
-#logo, #header, #links {
-    position: relative;
+#initials, #cmdbox, #nametag, #links {
     text-align: center;
     margin: auto;
     padding: 1em;
 }
 
-/* logo button and command box */
-#logo button {
+/* initials button */
+#initials button {
     all: unset;
     width: 1em;
-    font-family: 'Seaweed Script', cursive;
+    font-family: var(--initials-font);
     font-size: 10em;
-    color: var(--red);
+    color: var(--red-color);
     transition: transform .2s;
     cursor: pointer;
+    user-select: none;
 }
-#logo button:hover {
-    transform: scale(1.25);
-}
-#logo input {
-    display: none;
-    position: relative;
-    top: -1em;
-    width: 30%;
-    font-size: 1.4em;
-    font-family: 'Courier Prime', monospace;
-    color: var(--fg);
-    background: var(--bg);
-    border: none;
-}
-
-/* header text */
-#header h1 {
-    font-size: 2.5em;
-    color: var(--blue);
-}
-#header h2 {
-    font-size: 1.5em;
-    color: var(--yellow);
-}
-#header h1 span {
-    color: var(--yellow);
-    font-size: 1.3em;
-}
-#header h2 span {
-    color: var(--blue);
-    font-size: 1.3em;
-}
-
-/* links icons */
-#links a {
-    text-decoration: none;
-}
-#links img {
-    width: 5em;
-    padding-left: 1em;
-    padding-right: 1em;
-    transition: transform .2s;
-}
-#links img:hover {
+#initials button:hover {
     transform: scale(1.1);
 }
 
-/* header text */
-#header h1 {
-    font-size: 2.5em;
-    color: var(--blue);
+/* command box */
+#cmdbox {
+    display: none;
 }
-#header h2 {
+#cmdbox label {
     font-size: 1.5em;
-    color: var(--yellow);
 }
-#header h1 span {
-    color: var(--yellow);
+#cmdbox input {
+    width: 20em;
+    font-family: var(--mono-font);
     font-size: 1.3em;
+    color: var(--fg-color);
+    background: var(--bg-color);
+    outline: none;
+    border: none;
 }
-#header h2 span {
-    color: var(--blue);
+
+/* nametag text */
+#nametag h1 {
+    font-size: 2.5em;
+    color: var(--blue-color);
+}
+#nametag h1 .bracket {
     font-size: 1.3em;
+    color: var(--purple-color);
+}
+#nametag h1 .john {
+    font-size: 1.1em;
+    color: var(--yellow-color);
 }
 
 /* links icons */
@@ -117,11 +91,10 @@ body {
     text-decoration: none;
 }
 #links img {
-    width: 5em;
+    width: 4em;
     padding-left: 1em;
     padding-right: 1em;
     transition: transform .2s;
-    color: green;
 }
 #links img:hover {
     transform: scale(1.1);
