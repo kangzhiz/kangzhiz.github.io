@@ -2,49 +2,68 @@
 
 /* colors and fonts variables */
 :root {
-    --bg-color: #1b1b1b;
-    --fg-color: #ebdbb2;
-    --red-color: #cc241d;
-    --yellow-color: #d79921;
-    --blue-color: #458588;
-    --purple-color: #b16286;
+    --bg: #1b1b1b;
+    --white: #ebdbb2;
+    --red: #cc241d;
+    --yellow: #d79921;
+    --blue: #458588;
+    --purple: #b16286;
     --mono-font: 'Courier Prime', monospace;
 }
 
 /* default theme and font */
 body {
     font-family: var(--mono-font);
-    color: var(--fg-color);
-    background: var(--bg-color);
+    background: var(--bg);
 }
 
-/* nametag and command box */
+/* nametag and links */
 #center {
     position: absolute;
-    top: 35%;
+    top: 40%;
     left: 50%;
+    width: 100%;
     transform: translate(-50%, -50%);
-    font-size: 2em;
     text-align: center;
-    width: 30em;
+    font-size: 2em;
+    color: var(--blue);
     user-select: none;
 }
-#center h1 {
-    color: var(--blue-color);
-}
-#center h1 span {
+#center h1 .john {
     font-size: 1.1em;
-    color: var(--yellow-color);
+    color: var(--yellow);
 }
 #center h1 .bracket {
     font-size: 1.4em;
-    color: var(--red-color);
+    color: var(--red);
+}
+#center div {
+    width: 30%;
+    margin: auto;
 }
 #center div a {
+    display: block;
+    padding: 0.3em;
     font-size: 1em;
-    color: var(--fg-color);
+    color: var(--white);
     text-decoration: none;
 }
 #center div a:hover {
-    color: var(--purple-color);
+    color: var(--purple);
+}
+
+/* scaling for lower resolutions*/
+@media only screen and (max-width: 56em) {
+    #center {
+        width: 100%;
+        font-size: 4vw;
+    }
+    #center h1 .block {
+        display: block;
+        padding: 0.1em;
+        font-size: 0.9em;
+    }
+    #center div a {
+        font-size: 5vw;
+    }
 }
