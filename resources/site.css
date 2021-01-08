@@ -38,7 +38,7 @@ body {
     color: var(--red);
 }
 #center div {
-    width: 30%;
+    width: 9em;
     margin: auto;
 }
 #center div a {
@@ -54,16 +54,12 @@ body {
 
 /* scaling for lower resolutions*/
 @media only screen and (max-width: 56em) {
-    #center {
-        width: 100%;
-        font-size: 4vw;
-    }
     #center h1 .block {
         display: block;
         padding: 0.1em;
         font-size: 0.9em;
     }
     #center div a {
-        font-size: 5vw;
+        font-size: 1.3em;
     }
 }
