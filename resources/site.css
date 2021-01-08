@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+
+/* colors and fonts variables */
+:root {
+    --bg-color: #1b1b1b;
+    --fg-color: #ebdbb2;
+    --red-color: #cc241d;
+    --yellow-color: #d79921;
+    --blue-color: #458588;
+    --purple-color: #b16286;
+    --mono-font: 'Courier Prime', monospace;
+}
+
+/* default theme and font */
+body {
+    font-family: var(--mono-font);
+    color: var(--fg-color);
+    background: var(--bg-color);
+}
+
+/* nametag and command box */
+#center {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    text-align: center;
+    width: 30em;
+    user-select: none;
+}
+#center h1 {
+    color: var(--blue-color);
+}
+#center h1 span {
+    font-size: 1.1em;
+    color: var(--yellow-color);
+}
+#center h1 .bracket {
+    font-size: 1.4em;
+    color: var(--red-color);
+}
+#center div a {
+    font-size: 1em;
+    color: var(--fg-color);
+    text-decoration: none;
+}
+#center div a:hover {
+    color: var(--purple-color);
+}
