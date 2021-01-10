@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
 
-/* colors and fonts variables */
 :root {
     --bg: #1b1b1b;
     --white: #ebdbb2;
@@ -11,55 +10,51 @@
     --mono-font: 'Courier Prime', monospace;
 }
 
-/* default theme and font */
 body {
+    margin: auto;
+    text-align: center;
     font-family: var(--mono-font);
     background: var(--bg);
-}
-
-/* nametag and links */
-#center {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    width: 100%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    font-size: 2em;
-    color: var(--blue);
     user-select: none;
 }
-#center h1 .john {
+
+#nametag {
+    padding-top: 25vh;
+    font-size: 3.5em;
+    color: var(--blue);
+}
+#nametag .john {
     font-size: 1.1em;
     color: var(--yellow);
 }
-#center h1 .bracket {
+#nametag .bracket {
     font-size: 1.4em;
     color: var(--red);
 }
-#center div {
-    width: 9em;
-    margin: auto;
+
+#links {
+    font-size: 2em;
 }
-#center div a {
+#links a {
     display: block;
+    width: 5em;
+    margin: auto;
     padding: 0.3em;
-    font-size: 1em;
     color: var(--white);
     text-decoration: none;
 }
-#center div a:hover {
+#links a:hover {
     color: var(--purple);
 }
 
-/* scaling for lower resolutions*/
 @media only screen and (max-width: 56em) {
-    #center h1 .block {
-        display: block;
-        padding: 0.1em;
-        font-size: 0.9em;
+    #nametag {
+        padding-top: 15vh;
     }
-    #center div a {
+    #nametag .block {
+        display: block;
+    }
+    #links a {
         font-size: 1.3em;
     }
 }
