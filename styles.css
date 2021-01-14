@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
 
 :root {
-    --bg: #1b1b1b;
-    --white: #ebdbb2;
-    --red: #cc241d;
-    --yellow: #d79921;
-    --blue: #458588;
-    --purple: #b16286;
+    --bg: #222222;
+    --white: #d8dee9;
+    --blue: #5e81ac;
+    --cyan: #88c0d0;
+    --green: #a3be8c;
+    --purple: #b48ead;
     --mono-font: 'Courier Prime', monospace;
 }
 
@@ -19,17 +19,17 @@ body {
 }
 
 #nametag {
-    padding-top: 25vh;
+    padding-top: 30vh;
     font-size: 3.5em;
     color: var(--blue);
 }
 #nametag .john {
     font-size: 1.1em;
-    color: var(--yellow);
+    color: var(--green);
 }
 #nametag .bracket {
     font-size: 1.4em;
-    color: var(--red);
+    color: var(--cyan);
 }
 
 #links {
@@ -55,6 +55,6 @@ body {
         display: block;
     }
     #links a {
-        font-size: 1.3em;
+        font-size: 1.2em;
     }
 }

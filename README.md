@@ -1,5 +1,5 @@
 # kangzhiz.github.io
 
-Just my personal website.
+Not much to see here... just a [simple webpage](https://www.kangzhiz.com).
 
-Work in progress... nothing to see here yet.
+*Color scheme based on [Nord](https://www.nordtheme.com/)*
