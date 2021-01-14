@@ -6,7 +6,6 @@
     --blue: #5e81ac;
     --cyan: #88c0d0;
     --green: #a3be8c;
-    --purple: #b48ead;
     --mono-font: 'Courier Prime', monospace;
 }
 
@@ -44,7 +43,7 @@ body {
     text-decoration: none;
 }
 #links a:hover {
-    color: var(--purple);
+    text-decoration: underline;
 }
 
 @media only screen and (max-width: 56em) {
