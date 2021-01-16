@@ -20,6 +20,7 @@ body {
 #swatches {
     padding-top: 20vh;
     font-size: 1.5em;
+    letter-spacing: -0.1em;
 }
 #swatches .mid {
     color: var(--green);
