@@ -2,10 +2,10 @@
 
 :root {
     --bg: #222222;
-    --white: #d8dee9;
-    --blue: #5e81ac;
-    --cyan: #88c0d0;
     --green: #a3be8c;
+    --cyan: #88c0d0;
+    --blue: #5e81ac;
+    --white: #d8dee9;
     --mono-font: 'Courier Prime', monospace;
 }
 
@@ -17,8 +17,25 @@ body {
     user-select: none;
 }
 
+#swatches {
+    padding-top: 20vh;
+    font-size: 1.5em;
+}
+#swatches .mid {
+    color: var(--green);
+}
+#swatches .out1 {
+    color: var(--cyan);
+}
+#swatches .out2 {
+    color: var(--blue);
+}
+#swatches .out3 {
+    color: var(--white);
+}
+
 #nametag {
-    padding-top: 30vh;
+    padding-top: 5vh;
     font-size: 3.5em;
     color: var(--blue);
 }
@@ -32,6 +49,7 @@ body {
 }
 
 #links {
+    padding-top: 3vh;
     font-size: 2em;
 }
 #links a {
@@ -47,8 +65,8 @@ body {
 }
 
 @media only screen and (max-width: 56em) {
-    #nametag {
-        padding-top: 15vh;
+    #swatches {
+        padding-top: 10vh;
     }
     #nametag .block {
         display: block;
