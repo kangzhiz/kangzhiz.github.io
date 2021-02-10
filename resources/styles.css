@@ -22,29 +22,33 @@ body {
     font-size: 1.5em;
     letter-spacing: -0.1em;
 }
-#swatches .mid {
+.mid {
     color: var(--green);
 }
-#swatches .out1 {
+.out1 {
     color: var(--cyan);
 }
-#swatches .out2 {
+.out2 {
     color: var(--blue);
 }
-#swatches .out3 {
+.out3 {
     color: var(--white);
 }
 
-#nametag {
+#nametag, #nametag-condensed {
     padding-top: 5vh;
     font-size: 3.5em;
     color: var(--blue);
 }
-#nametag .john {
+#nametag-condensed {
+    display: none;
+    font-size: 3em;
+}
+.john {
     font-size: 1.1em;
     color: var(--green);
 }
-#nametag .bracket {
+.bracket {
     font-size: 1.4em;
     color: var(--cyan);
 }
@@ -53,7 +57,7 @@ body {
     padding-top: 3vh;
     font-size: 2em;
 }
-#links a {
+a {
     display: block;
     width: 5em;
     margin: auto;
@@ -61,19 +65,23 @@ body {
     color: var(--white);
     text-decoration: none;
 }
-#links a:hover {
+a:hover {
     text-decoration: underline;
 }
 
-@media only screen and (orientation: portrait) {
+@media only screen and (orientation: portrait), (max-width: 56em) {
     #swatches {
+        font-size: 1.7em;
         padding-top: 10vh;
     }
-    #nametag .block {
+    #nametag {
+        display: none;
+    }
+    #nametag-condensed {
         display: block;
     }
     #links a {
-        font-size: 1.2em;
+        font-size: 1.1em;
         padding: 0.7em;
     }
 }
