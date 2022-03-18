@@ -1,0 +1,89 @@
+@font-face {
+  font-family: 'Cascadia Mono';
+  src: url('../media/fonts/CascadiaMono.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Cascadia Mono Italic';
+  src: url('../media/fonts/CascadiaMonoItalic.woff2') format('woff2');
+}
+body,
+html {
+  background-color: black;
+  height: 100%;
+  margin: auto;
+  overflow: hidden;
+  text-align: center;
+  user-select: none;
+}
+body .bg-image,
+html .bg-image {
+  background-image: url('../media/backgrounds/1.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(12px);
+  height: 100%;
+  transform: scale(1.1);
+}
+body .text,
+html .text {
+  font-family: 'Cascadia Mono Italic', monospaced;
+  left: 50%;
+  padding: 20px;
+  position: absolute;
+  text-align: center;
+  text-shadow: 2px 2px 8px black;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  z-index: 2;
+}
+body .text .name-container,
+html .text .name-container {
+  padding-top: 5vh;
+  font-size: 5rem;
+  margin-bottom: 5vh;
+}
+body .text .name-container .firstlast,
+html .text .name-container .firstlast {
+  color: #83a598;
+}
+body .text .name-container .middle,
+html .text .name-container .middle {
+  color: #b8bb26;
+}
+body .text .name-container .bracket,
+html .text .name-container .bracket {
+  color: #fabd2f;
+  font-size: 6rem;
+}
+body .text .links-container,
+html .text .links-container {
+  display: flex;
+  font-family: 'Cascadia Mono', monospaced;
+  font-size: 2rem;
+  justify-content: center;
+  line-height: 3rem;
+  margin-top: 6vh;
+}
+body .text .links-container .link,
+html .text .links-container .link {
+  height: 3rem;
+  padding: 0 1em;
+}
+body .text .links-container .link a,
+html .text .links-container .link a {
+  color: #ebdbb2;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+body .text .links-container .link a:hover,
+html .text .links-container .link a:hover {
+  font-size: 2.5rem;
+}
+@media only screen and (orientation: portrait), (max-width: 56em) {
+  .links a {
+    font-size: 1.1rem;
+    padding: 0.7em;
+  }
+}
