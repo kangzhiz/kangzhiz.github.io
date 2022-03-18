@@ -16,7 +16,7 @@ function concatText() {
 };
 
 window.onload = function() {
-    spans = document.getElementsByClassName('firstlast');
+    spans = document.getElementsByClassName('name');
 
     // store full names in case the window size is increased
     for (let i = 0; i < spans.length; i++) {
