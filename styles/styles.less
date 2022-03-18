@@ -8,7 +8,7 @@
 	src: url('../fonts/CascadiaMonoItalic.woff2') format('woff2')
 }
 
-@bg-image: url('../media/backgrounds/1.jpg');
+@bg-image: url('../img/backgrounds/1.jpg');
 
 // Using gruvbox color scheme. Hex values from:
 // https://github.com/gruvbox-community/gruvbox-contrib/blob/master/color.table
@@ -75,19 +75,17 @@ body, html {
 	.text {
 		font-family: 'Cascadia Mono Italic', monospaced;
 		left: 50%;
-		padding: 20px;
 		position: absolute;
 		text-align: center;
 		text-shadow: 2px 2px 8px black;
-		top: 50%;
+		top: 40%;
 		transform: translate(-50%, -50%);
-		width: 80%;
+		width: 95%;
 		z-index: 2;
 
 		.name-container {
 			padding-top: 5vh;
-			font-size: 5rem;
-			margin-bottom: 5vh;
+			font-size: 4rem;
 
 			.firstlast {
 				color: @bright_blue;
@@ -99,8 +97,15 @@ body, html {
 
 			.bracket {
 				color: @bright_yellow;
-				font-size: 6rem;
+				font-size: 4rem;
 			}
+		}
+
+		.header {
+			color: @dark0_hard;
+			font-family: 'Cascadia Mono Italic', monospaced;
+			font-size: 2rem;
+			text-shadow: none;
 		}
 
 		.links-container {
@@ -109,7 +114,6 @@ body, html {
 			font-size: 2rem;
 			justify-content: center;
 			line-height: 3rem;
-			margin-top: 6vh;
 
 			.link {
 				height: 3rem;

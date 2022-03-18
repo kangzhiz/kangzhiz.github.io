@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'Cascadia Mono';
-  src: url('../media/fonts/CascadiaMono.woff2') format('woff2');
+  src: url('../fonts/CascadiaMono.woff2') format('woff2');
 }
 @font-face {
   font-family: 'Cascadia Mono Italic';
-  src: url('../media/fonts/CascadiaMonoItalic.woff2') format('woff2');
+  src: url('../fonts/CascadiaMonoItalic.woff2') format('woff2');
 }
 body,
 html {
@@ -17,7 +17,7 @@ html {
 }
 body .bg-image,
 html .bg-image {
-  background-image: url('../media/backgrounds/1.jpg');
+  background-image: url('../img/backgrounds/1.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -29,20 +29,18 @@ body .text,
 html .text {
   font-family: 'Cascadia Mono Italic', monospaced;
   left: 50%;
-  padding: 20px;
   position: absolute;
   text-align: center;
   text-shadow: 2px 2px 8px black;
-  top: 50%;
+  top: 40%;
   transform: translate(-50%, -50%);
-  width: 80%;
+  width: 95%;
   z-index: 2;
 }
 body .text .name-container,
 html .text .name-container {
   padding-top: 5vh;
-  font-size: 5rem;
-  margin-bottom: 5vh;
+  font-size: 4rem;
 }
 body .text .name-container .firstlast,
 html .text .name-container .firstlast {
@@ -55,7 +53,14 @@ html .text .name-container .middle {
 body .text .name-container .bracket,
 html .text .name-container .bracket {
   color: #fabd2f;
-  font-size: 6rem;
+  font-size: 4rem;
+}
+body .text .header,
+html .text .header {
+  color: #1d2021;
+  font-family: 'Cascadia Mono Italic', monospaced;
+  font-size: 2rem;
+  text-shadow: none;
 }
 body .text .links-container,
 html .text .links-container {
@@ -64,7 +69,6 @@ html .text .links-container {
   font-size: 2rem;
   justify-content: center;
   line-height: 3rem;
-  margin-top: 6vh;
 }
 body .text .links-container .link,
 html .text .links-container .link {
