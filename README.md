@@ -2,10 +2,9 @@
 
 Not much to see here... just a simple [webpage](https://www.kangzhiz.com).
 
+Built with [Svelte](https://svelte.dev).
+
 ## TODO
 
-* Smoother animations when resizing window
-* Favicon
 * Finalize background image(s)
 * Finalize colors
-* Add frames around text
