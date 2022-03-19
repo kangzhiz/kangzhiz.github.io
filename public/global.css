@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+@font-face {
+    font-family: 'Cascadia Mono';
+    src: url('/fonts/CascadiaMono.woff2') format('woff2')
+}
+
+@font-face {
+    font-family: 'Cascadia Mono Italic';
+    src: url('/fonts/CascadiaMonoItalic.woff2') format('woff2')
+}
+
+:root {
+    --gruv_dark0: #1d2021;
+    --gruv_dark1: #282828;
+    --gruv_light: #f9f5d7;
+    --gruv_red: #fb4934;
+    --gruv_green: #b8bb26;
+    --gruv_yellow: #fabd2f;
+    --gruv_blue: #83a598;
+    --gruv_purple: #d3869b;
+    --gruv_aqua: #8ec07c;
+    --gruv_orange: #fe8019;
+}
+
+html, body {
+    background-color: var(--gruv_dark0);
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
