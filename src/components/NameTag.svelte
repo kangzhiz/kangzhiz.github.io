@@ -3,9 +3,9 @@
     export let middle;
     export let last;
 
-    let out1 = '';
-    let out2 = '';
-    let out3 = '';
+    let out1;
+    let out2;
+    let out3;
 
     function handleResize() {
         if (window.innerWidth > 875) {
@@ -23,11 +23,11 @@
 <svelte:window on:load={handleResize} on:resize={handleResize}/>
 
 <div class='name-container'>
-    <span class='name firstlast'>{out1}</span>
+    <span class='name firstlast'>{out1 ? out1 : ''}</span>
     <span class='bracket'>(</span>
-    <span class="name middle">{out2}</span>
+    <span class="name middle">{out2 ? out2 : ''}</span>
     <span class='bracket'>)</span>
-    <span class='name firstlast'>{out3}</span>
+    <span class='name firstlast'>{out3 ? out3 : ''}</span>
 </div>
 
 <style>
