@@ -9,10 +9,7 @@
         if (numImages > 1 && curFileNum == fileNum) {
             randomizeBackground();
         }
-
-        console.log(fileNum);
     }
-
     randomizeBackground();
 </script>
 

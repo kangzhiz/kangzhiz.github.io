@@ -13,14 +13,15 @@
 
 <style>
     .links-container {
-        border: 3px solid var(--gruv_dark0);
+        border: 3px solid var(--gruv_blue);
         border-radius: 25px;
         margin: auto;
         width: 80%;
     }
 
     .header {
-        font-family: 'Archivo Black', Arial, Helvetica, sans-serif;
+        color: var(--gruv_blue);
+        font-family: Arial, Helvetica, sans-serif;
     }
 
     .links-group {

@@ -2,9 +2,10 @@
     export let first;
     export let middle;
     export let last;
-    let out1;
-    let out2;
-    let out3;
+
+    let out1 = '';
+    let out2 = '';
+    let out3 = '';
 
     function handleResize() {
         if (window.innerWidth > 875) {
@@ -32,17 +33,12 @@
 <style>
     .name-container {
         font-family: 'Cascadia Mono Italic', monospaced;
-        text-shadow: 2px 2px 8px var(--gruv_dark0);
         font-size: 4rem;
         padding-bottom: 3vh;
     }
 
     .name {
         color: var(--gruv_light);
-    }
-
-    .middle {
-        color: var(--gruv_yellow);
     }
 
     .bracket {

@@ -11,7 +11,6 @@
     .link {
         height: 3rem;
         padding: 0 1.5rem;
-        text-shadow: 2px 2px 8px var(--gruv_dark0);
     }
     
     a {
