@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+@font-face {
+    font-family: 'Cascadia Mono';
+    src: url('../resources/fonts/CascadiaMono.woff2') format('woff2')
+}
+
+@font-face {
+    font-family: 'Cascadia Mono Italic';
+    src: url('../resources/fonts/CascadiaMonoItalic.woff2') format('woff2')
+}
+
+/**
+ * Color pallete
+ */
+:root {
+    --gruv_dark: #282828;
+    --gruv_light: #f9f5d7;
+    --gruv_red: #fb4934;
+    --gruv_green: #b8bb26;
+    --gruv_yellow: #fabd2f;
+    --gruv_blue: #83a598;
+    --gruv_purple: #d3869b;
+    --gruv_aqua: #8ec07c;
+    --gruv_orange: #fe8019;
+}
+
+html, body {
+    background-color: var(--gruv_dark);
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+.text-body {
+    margin: auto;
+    padding-top: 25vh;
+    text-align: center;
+    width: 90%;
+}
+
+/**
+ * Name container
+ */
+.name-container {
+    font-family: 'Cascadia Mono Italic', monospaced;
+    font-size: 4rem;
+    padding-bottom: 3vh;
+    text-align: center;
+}
+.name-container .name {
+    color: var(--gruv_light);
+}
+.name-container .bracket {
+    color: var(--gruv_blue);
+    font-size: 5rem;
+}
+.name-container .short {
+    display: none;
+}
+
+/**
+ * Links container
+ */
+.links-container {
+    border: 3px solid var(--gruv_blue);
+    border-radius: 25px;
+    margin: auto;
+    width: 80%;
+}
+.links-container .header {
+    color: var(--gruv_blue);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.links-container .links-group {
+    display: flex;
+    font-family: 'Cascadia Mono', monospaced;
+    justify-content: center;
+    line-height: 3rem;
+    padding-bottom: 2vh;
+}
+.links-container .links-group .link {
+    height: 3rem;
+    padding: 0 1.5rem;
+    text-align: center;
+}
+.links-container .links-group .link a {
+    color: var(--gruv_light);
+    font-size: 1.75rem;
+    text-decoration: none;
+    transition: all .2s;
+}
+.links-container .links-group .link a:hover {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/**
+ * Logo
+ */
+.logo {
+    padding-top: 10vh;
+    text-align: center;
+}
+.logo img {
+    background-color: var(--gruv_light);
+    border-radius: 100px;
+    height: 50px;
+    opacity: 0.5;
+}
+.logo img:hover {
+    opacity: 1;
+}
+
+/**
+ * Mobile view
+ */
+@media only screen and (max-width: 876px) {
+    /**
+     * Name container
+     */
+    .name-container .bracket {
+        margin: 0 -1rem;
+    }
+    .name-container .short {
+        display: inline;
+    }
+    .name-container .long {
+        display: none;
+    }
+
+    /**
+     * Links container
+     */
+    .links-container .links-group {
+        flex-direction: column;
+    }
+    .links-container .links-group .link a {
+        font-size: 1.5rem;
+    }
+    .links-container .links-group .link a:hover {
+        font-size: 1.75rem;
+    }
+}
