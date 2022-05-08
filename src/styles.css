@@ -14,19 +14,13 @@
  * Color pallete
  */
 :root {
-    --gruv_dark: #282828;
-    --gruv_light: #f9f5d7;
-    --gruv_red: #fb4934;
-    --gruv_green: #b8bb26;
-    --gruv_yellow: #fabd2f;
-    --gruv_blue: #83a598;
-    --gruv_purple: #d3869b;
-    --gruv_aqua: #8ec07c;
-    --gruv_orange: #fe8019;
+    --background_color: #1f1f1f;
+    --foreground_color: #f9f5d7;
+    --accent_color: #83a598;
 }
 
 html, body {
-    background-color: var(--gruv_dark);
+    background-color: var(--background_color);
     height: 100%;
     margin: 0;
     overflow: hidden;
@@ -40,6 +34,10 @@ html, body {
     width: 90%;
 }
 
+.accent {
+    color: var(--accent_color);
+}
+
 /**
  * Name container
  */
@@ -50,10 +48,9 @@ html, body {
     text-align: center;
 }
 .name-container .name {
-    color: var(--gruv_light);
+    color: var(--foreground_color);
 }
 .name-container .bracket {
-    color: var(--gruv_blue);
     font-size: 5rem;
 }
 .name-container .short {
@@ -63,14 +60,7 @@ html, body {
 /**
  * Links container
  */
-.links-container {
-    border: 3px solid var(--gruv_blue);
-    border-radius: 25px;
-    margin: auto;
-    width: 80%;
-}
 .links-container .header {
-    color: var(--gruv_blue);
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
@@ -87,7 +77,7 @@ html, body {
     text-align: center;
 }
 .links-container .links-group .link a {
-    color: var(--gruv_light);
+    color: var(--foreground_color);
     font-size: 1.75rem;
     text-decoration: none;
     transition: all .2s;
@@ -105,7 +95,7 @@ html, body {
     text-align: center;
 }
 .logo img {
-    background-color: var(--gruv_light);
+    background-color: var(--foreground_color);
     border-radius: 100px;
     height: 50px;
     opacity: 0.5;
